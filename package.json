@@ -1,0 +1,32 @@
+{
+  "name": "web-audio-as-signal",
+  "version": "1.0.0",
+  "description": "The reverse of opposite",
+  "main": "build/index.js",
+  "module": "index",
+  "scripts": {
+    "pretest": "rollup -f cjs -o build/index.js -- index.js",
+    "test": "node test/test.js",
+    "start": "budo --open examples/draw.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oramics/web-audio-as-signal.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oramics/web-audio-as-signal/issues"
+  },
+  "homepage": "https://github.com/oramics/web-audio-as-signal#readme",
+  "dependencies": {
+    "audio-context": "^0.1.0",
+    "tst": "^1.3.1"
+  },
+  "devDependencies": {
+    "draw-waveform": "gist:ffe0c4e7a06586d4bbb018ca69887ae8",
+    "h": "^0.1.0",
+    "rollup": "^0.41.4",
+    "web-audio-test-api": "^0.5.2"
+  }
+}
